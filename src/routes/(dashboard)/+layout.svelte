@@ -2,10 +2,10 @@
 	import NavigationMenu from '../../lib/components/NavigationMenu.svelte';
 </script>
 
-<div class="grid min-h-screen grid-cols-12 gap-x-16 bg-whisper">
+<div class="grid min-h-screen grid-cols-12 bg-whisper md:gap-x-16">
 	<NavigationMenu />
 
-	<main class="col-span-8 py-10">
+	<main class="col-span-12 md:col-span-8 md:py-10">
 		<slot />
 	</main>
 </div>

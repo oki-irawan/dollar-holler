@@ -25,6 +25,10 @@ module.exports = {
 				caribbeanGreen: '#00ca9e',
 				fog: '#decaec',
 			},
+			zIndex: {
+				navbarToggle: 91,
+				navBar: 90,
+			}
 		}
 	},
 	plugins: []
