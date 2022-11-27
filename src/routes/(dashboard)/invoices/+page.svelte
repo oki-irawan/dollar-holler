@@ -1,225 +1,32 @@
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
+<script>
+	import SearchField from '$lib/components/SearchField.svelte';
+	import CircledAmount from '$lib/components/CircledAmount.svelte';
+	import InvoiceRow from '$lib/components/InvoiceRow.svelte';
+	import InvoiceHeader from '$lib/components/InvoiceHeader.svelte';
+</script>
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
+<svelte:head>
+	<title>Invoices | The Dollar Holler</title>
+</svelte:head>
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
+<!--Search Bar-->
+<div class="mb-16 flex items-center justify-between">
+	<!--	Serach Field	-->
+	<SearchField />
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
+	<button
+		class="center relative translate-y-0 whitespace-nowrap rounded-lg bg-lavenderIndigo py-3 px-10 font-sansSerif text-xl font-black text-white shadow-colored transition-all hover:-translate-y-2 hover:shadow-coloredHover"
+	>
+		+ Invoice
+	</button>
+</div>
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
+<!--	Invoice Table	-->
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
+<!--	Header	-->
+<InvoiceHeader />
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
+<!--	Invoice List	-->
+<InvoiceRow />
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti dicta doloremque, et eum
-	illo ipsam nam natus nihil nobis ratione sed soluta tempore! Aliquam aperiam et eveniet in
-	voluptatibus.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque cum cumque
-	doloribus ducimus eos esse exercitationem harum iste molestiae, necessitatibus neque, perspiciatis
-	provident quo, sint sit voluptatem?
-</p>
-
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur dolor
-	doloribus excepturi ipsam, omnis perspiciatis quas quod soluta, suscipit unde. A culpa dolorem
-	fugit odit tenetur vero voluptatibus.
-</p>
+<CircledAmount label="Total" amount="$1,144.00" />
