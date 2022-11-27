@@ -21,7 +21,8 @@ module.exports = {
 				tableRow: '0px 0px 6px rgba(0, 0, 0, 0.16)',
 			},
 			gridTemplateColumns: {
-				'invoiceTable': '100px 100px 60px 1fr 116px 32px 32px'
+				'invoiceTable': '100px 100px 60px 1fr 116px 32px 32px',
+				'invoiceTableMobile': '1fr 90px',
 			},
 			colors: {
 				lavenderIndigo: '#8657e1',

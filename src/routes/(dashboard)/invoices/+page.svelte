@@ -10,12 +10,14 @@
 </svelte:head>
 
 <!--Search Bar-->
-<div class="mb-16 flex items-center justify-between">
+<div
+	class="mb-7 flex flex-col-reverse items-start justify-between gap-y-6 md:mb-16 md:flex-row md:items-center md:gap-y-4"
+>
 	<!--	Serach Field	-->
 	<SearchField />
 
 	<button
-		class="center relative translate-y-0 whitespace-nowrap rounded-lg bg-lavenderIndigo py-3 px-10 font-sansSerif text-xl font-black text-white shadow-colored transition-all hover:-translate-y-2 hover:shadow-coloredHover"
+		class="center relative translate-y-0 whitespace-nowrap rounded-lg bg-lavenderIndigo py-2 px-5 font-sansSerif text-base font-black text-white shadow-colored transition-all hover:-translate-y-2 hover:shadow-coloredHover lg:py-3 lg:px-10 lg:text-xl"
 	>
 		+ Invoice
 	</button>

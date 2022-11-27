@@ -5,6 +5,10 @@
 	import Close from '$lib/components/icons/Close.svelte';
 
 	let isNavShowing = false;
+
+	function onNavShowingHandler() {
+		isNavShowing = !isNavShowing;
+	}
 </script>
 
 <svelte:head>
@@ -21,7 +25,7 @@
 	class="z fixed top-6 right-6 z-navbarToggle md:hidden"
 	class:text-goldenFizz={isNavShowing}
 	class:text-daisyBush={!isNavShowing}
-	on:click={() => (isNavShowing = !isNavShowing)}
+	on:click={onNavShowingHandler}
 >
 	{#if isNavShowing}
 		<Close width={32} height={32} />
@@ -42,8 +46,20 @@
 
 	<nav>
 		<ul class="list-none text-2xl font-bold">
-			<li><a href="/invoices" class:active={$page.url.pathname === '/invoices'}>Invoices</a></li>
-			<li><a href="/clients" class:active={$page.url.pathname === '/clients'}>Clients</a></li>
+			<li>
+				<a
+					href="/invoices"
+					on:click={onNavShowingHandler}
+					class:active={$page.url.pathname === '/invoices'}>Invoices</a
+				>
+			</li>
+			<li>
+				<a
+					href="/clients"
+					on:click={onNavShowingHandler}
+					class:active={$page.url.pathname === '/clients'}>Clients</a
+				>
+			</li>
 			<li><a href="#">Settings</a></li>
 			<li><a href="#">Logout</a></li>
 		</ul>

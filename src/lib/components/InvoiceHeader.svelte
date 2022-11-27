@@ -1,4 +1,4 @@
-<div class="tableHeader invoice-table text-daisyBush">
+<div class="tableHeader invoice-table hidden text-daisyBush lg:grid">
 	<h3>Status</h3>
 	<h3>Issue Date</h3>
 	<h3>ID</h3>
