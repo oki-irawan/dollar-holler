@@ -1,8 +1,14 @@
 <script>
+	import { invoices, loadInvoices } from '$lib/store/InvoiceStore';
+	import { onMount } from 'svelte';
+
 	import SearchField from '$lib/components/SearchField.svelte';
 	import CircledAmount from '$lib/components/CircledAmount.svelte';
-	import InvoiceRow from '$lib/components/InvoiceRow.svelte';
+	import InvoiceRow from './InvoiceRow.svelte';
 	import InvoiceHeader from '$lib/components/InvoiceHeader.svelte';
+	import { centToDollars, sumInvoices } from '$lib/utils/helpers/moneyHelpers';
+
+	onMount(() => loadInvoices());
 </script>
 
 <svelte:head>
@@ -24,11 +30,13 @@
 </div>
 
 <!--	Invoice Table	-->
+<div>
+	<!--	Header	-->
+	<InvoiceHeader />
 
-<!--	Header	-->
-<InvoiceHeader />
+	{#each $invoices as invoice}
+		<InvoiceRow {invoice} />
+	{/each}
+</div>
 
-<!--	Invoice List	-->
-<InvoiceRow />
-
-<CircledAmount label="Total" amount="$1,144.00" />
+<CircledAmount label="Total" amount={`$${centToDollars(sumInvoices($invoices))}`} />

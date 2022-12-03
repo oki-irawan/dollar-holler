@@ -8,7 +8,7 @@
 	class:inverted={label === 'draft'}
 	class:success={label === 'sent' || label === 'current'}
 	class:alert={label === 'late'}
-	class:archive={label === 'paid'}
+	class:archive={label === 'paid' || label === 'archive'}
 >
 	{label}
 </div>
