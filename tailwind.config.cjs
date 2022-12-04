@@ -11,6 +11,8 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				circle: "url('/images/circle.svg')",
+				arrowRightUp: "url('/images/arrow-right-up.svg')",
+				arrowLeftUp: "url('/images/arrow-left-up.svg')",
 			},
 			borderWidth: {
 				1: '1px'
@@ -25,21 +27,22 @@ module.exports = {
 				'invoiceTableMobile': '1fr 90px',
 			},
 			colors: {
-				lavenderIndigo: '#8657e1',
-				daisyBush: '#4714a5',
-				goldenFizz: '#feff40',
-				whisper: '#f9f4f9',
-				pastelPurple: '#b2a1bb',
-				purple: '#7209b7',
-				robinEggBlue: '#00e9c0',
 				blueGem: '#3813a0',
 				caribbeanGreen: '#1CC6A0',
-				scarlet: '#f72f45',
-				monsoon: '#777878',
-				silver: '#c0c0c0',
-				gallery: '#efeaf2',
 				caribbeanGreen: '#00ca9e',
+				daisyBush: '#4714a5',
 				fog: '#decaec',
+				gallery: '#efeaf2',
+				goldenFizz: '#feff40',
+				lavenderIndigo: '#8657e1',
+				monsoon: '#777878',
+				pastelPurple: '#b2a1bb',
+				prim: '#ede6ef',
+				purple: '#7209b7',
+				robinEggBlue: '#00e9c0',
+				scarlet: '#f72f45',
+				silver: '#c0c0c0',
+				whisper: '#f9f4f9',
 			},
 			zIndex: {
 				navbarToggle: 91,

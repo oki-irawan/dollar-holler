@@ -1,4 +1,8 @@
-<div class="tableHeader invoice-table hidden text-daisyBush lg:grid">
+<script lang="ts">
+	export let className = '';
+</script>
+
+<div class={`tableHeader invoice-table hidden text-daisyBush lg:grid ${className}`}>
 	<h3>Status</h3>
 	<h3>Issue Date</h3>
 	<h3>ID</h3>
