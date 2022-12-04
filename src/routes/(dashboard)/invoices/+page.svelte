@@ -8,6 +8,7 @@
 	import InvoiceHeader from './InvoiceHeader.svelte';
 	import { centToDollars, sumInvoices } from '$lib/utils/helpers/moneyHelpers';
 	import BlankState from './BlankState.svelte';
+	import Portal from '$lib/components/Portal.svelte';
 
 	onMount(() => loadInvoices());
 </script>
