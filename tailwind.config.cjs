@@ -45,6 +45,8 @@ module.exports = {
 				whisper: '#f9f4f9',
 			},
 			zIndex: {
+				modal: 999,
+				overlay: 998,
 				navbarToggle: 91,
 				navBar: 90,
 			}

@@ -14,8 +14,6 @@ G.idea/sonarlint/issuestore/8/4/8489adee26d4fada583a9de7e18b5773721238bf,d/2/d2
 src/seed.json,7/6/7602c6f3ed1734884253ff6fef1ce00801a7bcb8
 <
 src/enums.ts,a/6/a62a7097cb637c77ddd7d8c3802caa63893be666
-?
-src/global.d.ts,c/3/c3ac4770658a5d9f6337d9cd963f074b7db1a5cf
 U
 %src/lib/components/icons/Trash.svelte,5/3/5326b74bc6718b312a7f2fc83766bb17d48bf90a
 @
@@ -36,11 +34,13 @@ X
 (src/lib/components/NavigationMenu.svelte,2/0/20aefd94b0c84a9bf44919cac9557d56142a4248
 T
 $src/lib/components/icons/Send.svelte,1/8/180d70c1272a8b8f0e580d084d09283e4a279e0d
-T
-$src/lib/components/icons/Edit.svelte,2/c/2c7ac1f7958c9930551829fd1bb7728c20c285a2
 P
  static/images/arrow-right-up.svg,2/e/2ea8587104e930003d965ee3ea31aca93c8b1f84
 [
 +src/lib/components/AdditionalOptions.svelte,a/6/a6537b3745b9f7a52c510e8c1e7ee441ef3016f8
+R
+"src/lib/components/BlankRow.svelte,f/4/f4038c84e5a3d56f6d64c3a18fb34ada7ab6e771
 a
-1src/routes/(dashboard)/invoices/InvoiceRow.svelte,4/b/4b84d7c66efbf49a4346659d586953ef69e2412d
+1src/routes/(dashboard)/invoices/BlankState.svelte,d/7/d7f57d8d28dd323a8d7905c136892c4ac88e4624
+G
+src/routes/+page.svelte,0/c/0cc7436e43646401331b342eb4c6db357ce6f5a9

@@ -6,14 +6,20 @@
 	import Trash from '$lib/components/icons/Trash.svelte';
 	import Edit from '$lib/components/icons/Edit.svelte';
 	import AdditionalOptions from '$lib/components/AdditionalOptions.svelte';
+	import Modal from '$lib/components/Modal.svelte';
+	import Button from '$lib/components/Button.svelte';
 
 	import { sumLineItems, centToDollars } from '$lib/utils/helpers/moneyHelpers';
 	import { convertDate, isLate } from '$lib/utils/helpers/dateHelpers';
 	import { InvoiceStatus } from '../../../enums';
+	import { removeInvoice } from '$lib/store/InvoiceStore.js';
 
-	export let invoice;
+	export let invoice: Invoice;
 	let isAdditionalMenuShowing = false;
 	let isOptionDisabled = false;
+	let isModalShowing = false;
+
+	let totalAmountInvoice = centToDollars(sumLineItems(invoice.lineItems));
 
 	function onEditHandler() {
 		console.log('Editing');
@@ -22,7 +28,8 @@
 		console.log('Sending');
 	}
 	function onDeleteHandler() {
-		console.log('Deleting');
+		isAdditionalMenuShowing = false;
+		isModalShowing = true;
 	}
 
 	function getInvoiceTagStatus() {
@@ -51,7 +58,7 @@
 		{invoice.client.name}
 	</div>
 	<div class="amount text-right font-mono text-sm font-bold lg:text-lg">
-		${centToDollars(sumLineItems(invoice.lineItems))}
+		${totalAmountInvoice}
 	</div>
 	<div class="center viewButton hidden text-sm lg:block lg:text-lg">
 		<a href="#" class="text-pastelPurple hover:text-daisyBush"><View /> </a>
@@ -75,6 +82,33 @@
 		{/if}
 	</div>
 </div>
+
+<Modal isVisible={isModalShowing} on:close={() => (isModalShowing = false)}>
+	<div class="flex h-full min-h-[175px] flex-col items-center justify-between gap-6">
+		<h5 class="text-center text-xl font-bold text-daisyBush">
+			Are you sure you want to delete this to
+			<span class="text-scarlet">{invoice.client.name}</span> for
+			<span class="text-scarlet">${totalAmountInvoice}</span>?
+		</h5>
+		<div class="flex justify-between gap-4">
+			<Button
+				label="Cancel"
+				variant="secondary"
+				isAnimated={false}
+				onClick={() => (isModalShowing = false)}
+			/>
+			<Button
+				label="Yes, Delete It"
+				variant="destructive"
+				isAnimated={false}
+				onClick={() => {
+					isModalShowing = false;
+					removeInvoice(invoice);
+				}}
+			/>
+		</div>
+	</div>
+</Modal>
 
 <style lang="postcss">
 	.invoice-row {
